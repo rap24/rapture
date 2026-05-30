@@ -218,9 +218,8 @@ a {
     min-height: var(--promo-height);
     height: auto;
     padding: 10px;
-    background: linear-gradient(135deg, rgba(61, 135, 138, 0.25) 0%, rgba(12, 24, 25, 0.9) 100%);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
+    background: #0c1819 linear-gradient(135deg, rgba(61, 135, 138, 0.4) 0%, rgba(12, 24, 25, 0.9) 100%);
+    backdrop-filter: none; /* No longer needed if opaque */
     border-bottom: 1px solid rgba(142, 187, 189, 0.15);
     box-shadow: var(--glass-highlight);
     display: flex;
