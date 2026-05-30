@@ -84,6 +84,7 @@ html {
     font-size: 16px;
     scroll-padding-top: 140px;
     overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -91,6 +92,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
     transition: color 0.3s ease;
     background-color: var(--cream);
     position: relative;
@@ -223,16 +225,17 @@ a {
     z-index: 1000;
     font-family: var(--font-family-headers);
     font-weight: 800;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     color: #e8f4f4;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .insurance-promo-banner a {
     text-decoration: underline;
     margin-left: 6px;
     color: #8ebbbd;
+    white-space: nowrap;
 }
 
 .insurance-promo-banner a:hover {
@@ -504,7 +507,7 @@ body.over-hero .nav-link.active::after {
         left: -100%;
         width: 100%;
         height: calc(100vh - var(--header-height) - var(--promo-height) - 20px);
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(18, 36, 37, 0.95);
         backdrop-filter: blur(20px) saturate(180%);
         -webkit-backdrop-filter: blur(20px) saturate(180%);
         flex-direction: column;
