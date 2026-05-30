@@ -504,8 +504,15 @@ body.over-hero .nav-link.active::after {
         --promo-height: 90px;
     }
 
-    .mobile-break {
-        display: block;
+    .insurance-promo-banner {
+        flex-direction: column;
+        gap: 6px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .insurance-promo-banner a {
+        margin-left: 0;
     }
 
     .menu-toggle {
