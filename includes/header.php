@@ -17,7 +17,7 @@ $base = isset($is_article) ? '../' : '';
     <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
     <title><?= htmlspecialchars($page_title) ?></title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= $base ?>css/style.css?v=13.0">
+    <link rel="stylesheet" href="<?= $base ?>css/style.css?v=14.0">
     <link rel="icon" type="image/png" href="<?= $base ?>assets/logo.png">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
