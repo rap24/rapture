@@ -215,7 +215,9 @@ a {
     position: relative;
     top: 0;
     width: 100%;
-    height: var(--promo-height);
+    min-height: var(--promo-height);
+    height: auto;
+    padding: 10px;
     background: linear-gradient(135deg, rgba(61, 135, 138, 0.25) 0%, rgba(12, 24, 25, 0.9) 100%);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
@@ -230,7 +232,6 @@ a {
     font-size: 0.9rem;
     color: #e8f4f4;
     text-align: center;
-    padding: 0 10px;
 }
 
 .insurance-promo-banner a {
@@ -271,7 +272,8 @@ a {
     --glow-primary: rgba(142, 187, 189, 0.2);
     
     position: absolute;
-    top: calc(var(--promo-height) + 12px);
+    top: auto;
+    margin-top: 12px;
     left: 24px;
     right: 24px;
     width: auto;
@@ -517,7 +519,7 @@ body.over-hero .nav-link.active::after {
     
     .nav-menu {
         position: absolute;
-        top: calc(var(--header-height) + var(--promo-height) + 20px);
+        top: calc(100% + 12px);
         left: -100%;
         width: 100%;
         height: calc(100vh - var(--header-height) - var(--promo-height) - 20px);
