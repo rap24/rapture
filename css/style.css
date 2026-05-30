@@ -3558,6 +3558,13 @@ select.form-control option {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .hero-expressable::before,
+    .hero-expressable::after {
+        display: none;
+    }
+}
+
 /* Cost & Package Estimator ambient glows */
 .estimator-card {
     position: relative;
