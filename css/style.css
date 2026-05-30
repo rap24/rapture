@@ -218,10 +218,10 @@ a {
     min-height: var(--promo-height);
     height: auto;
     padding: 10px;
-    background: #0c1819 linear-gradient(135deg, rgba(61, 135, 138, 0.4) 0%, rgba(12, 24, 25, 0.9) 100%);
-    backdrop-filter: none; /* No longer needed if opaque */
-    border-bottom: 1px solid rgba(142, 187, 189, 0.15);
-    box-shadow: var(--glass-highlight);
+    background: #ffffff;
+    backdrop-filter: none;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,15 +229,25 @@ a {
     font-family: var(--font-family-headers);
     font-weight: 800;
     font-size: 0.9rem;
-    color: #e8f4f4;
+    color: var(--text-dark);
     text-align: center;
 }
 
 .insurance-promo-banner a {
     text-decoration: underline;
     margin-left: 6px;
-    color: #8ebbbd;
+    color: var(--primary);
     white-space: nowrap;
+}
+
+[data-theme="dark"] .insurance-promo-banner {
+    background: #0c1819 linear-gradient(135deg, rgba(61, 135, 138, 0.4) 0%, rgba(12, 24, 25, 0.9) 100%);
+    border-bottom: 1px solid rgba(142, 187, 189, 0.15);
+    color: #e8f4f4;
+}
+
+[data-theme="dark"] .insurance-promo-banner a {
+    color: #8ebbbd;
 }
 
 .insurance-promo-banner a:hover {
