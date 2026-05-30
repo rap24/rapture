@@ -717,12 +717,13 @@ body.over-hero .nav-link.active::after {
 
 .hero-bg-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 104%;
-    height: 104%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transform: scale(1.05);
+    transform-origin: center center;
     z-index: 0;
     opacity: 0.15;
     pointer-events: none;
@@ -3524,31 +3525,7 @@ select.form-control option {
     overflow: hidden;
 }
 
-.hero-expressable::before {
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, rgba(61, 135, 138, 0.25) 0%, rgba(61, 135, 138, 0) 70%);
-    filter: blur(50px);
-    z-index: 0;
-    pointer-events: none;
-}
-
-.hero-expressable::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(7, 108, 24, 0.15) 0%, rgba(7, 108, 24, 0) 70%);
-    filter: blur(60px);
-    z-index: 0;
-    pointer-events: none;
-}
+/* Ambient Glowing Background Blobs (Removed due to Safari blur edge clamping bugs) */
 
 /* Ensure hero content sits above the ambient glow */
 .hero-expressable h1,
