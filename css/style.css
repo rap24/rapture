@@ -518,6 +518,7 @@ body.over-hero .nav-link.active::after {
         gap: 6px;
         padding-top: 12px;
         padding-bottom: 12px;
+        background: linear-gradient(135deg, #ffffff 20%, #3d878a 100%);
     }
     
     .insurance-promo-banner a {
@@ -539,7 +540,7 @@ body.over-hero .nav-link.active::after {
         left: -110vw;
         width: 100%;
         height: calc(100vh - var(--header-height) - var(--promo-height) - 20px);
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.85);
         --text-dark: #122425;
         --text-muted: #5e7a7d;
         backdrop-filter: blur(20px) saturate(180%);
@@ -548,7 +549,9 @@ body.over-hero .nav-link.active::after {
         align-items: center;
         padding-top: 40px;
         transition: var(--transition);
-        border-top: 2px solid var(--border-color);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         gap: 16px;
         overflow-y: auto;
     }
@@ -558,7 +561,9 @@ body.over-hero .nav-link.active::after {
     }
 
     [data-theme="dark"] .nav-menu {
-        background: #0c1819;
+        background: rgba(12, 24, 25, 0.85);
+        border: 1px solid rgba(142, 187, 189, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         --text-dark: #e8f4f4;
         --text-muted: #8ebbbd;
     }
