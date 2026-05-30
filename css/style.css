@@ -83,6 +83,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     scroll-padding-top: 140px;
+    overflow-x: hidden;
 }
 
 body {
@@ -517,6 +518,10 @@ body.over-hero .nav-link.active::after {
     
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-actions .btn {
+        display: none;
     }
     
     .nav-item {
@@ -1926,7 +1931,9 @@ body.over-hero .nav-link.active::after {
     width: 100%;
     border-radius: var(--border-radius-card);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 90vh;
     position: relative;
     transform: scale(0.9) translateY(20px);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
