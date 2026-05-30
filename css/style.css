@@ -244,6 +244,10 @@ a {
     text-decoration: none;
 }
 
+.mobile-break {
+    display: none;
+}
+
 /* Sticky Header Navigation */
 .header {
     /* Enforce dark-mode theme variables for header and its dropdowns */
@@ -494,6 +498,14 @@ body.over-hero .nav-link.active::after {
 }
 
 @media (max-width: 992px) {
+    :root {
+        --promo-height: 90px;
+    }
+
+    .mobile-break {
+        display: block;
+    }
+
     .menu-toggle {
         display: block;
     }
